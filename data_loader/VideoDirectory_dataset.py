@@ -14,7 +14,7 @@ class VideoDirectory(TextVideoDataset):
         if self.split != 'test':
             raise NotImplementedError("Assumes inference, no text, hence cant be used for training...")
         ## assumes mkv
-        TARGET_EXT = "*.mp4"
+        target_ext = "*.mp4"
         video_glob = os.path.join(self.data_dir, '**', target_ext)
         video_li = glob.glob(video_glob, recursive=True)
         video_li = [x.replace(self.data_dir, '').strip('/') for x in video_li]
