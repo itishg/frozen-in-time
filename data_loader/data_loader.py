@@ -47,7 +47,7 @@ def dataset_loader(dataset_name,
     # ---experimental--- not for public
     elif dataset_name == "VideoDirectory":
         dataset = VideoDirectory(**kwargs)
-        dataset = ActivityNet(**kwargs)
+        # dataset = ActivityNet(**kwargs)
     elif dataset_name == "ImageDirectory":
         dataset = ImageDirectory(**kwargs)
     else:
