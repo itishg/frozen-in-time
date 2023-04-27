@@ -24,7 +24,7 @@
         "type": "TextVideoDataLoader",
         "args":{
             "dataset_name": "ImageDirectory",
-            "data_dir": "",
+            "data_dir": "/content/drive/MyDrive/overwatch_data",
             "shuffle": true,
             "num_workers": 16,
             "batch_size": 16,
