@@ -24,7 +24,7 @@
         "type": "TextVideoDataLoader",
         "args":{
             "dataset_name": "VideoDirectory",
-            "data_dir": "/content/drive/MyDrive/overwatch_data",
+            "data_dir": "/content/drive/MyDrive/overwatch_data/cropped",
             "shuffle": true,
             "num_workers": 16,
             "batch_size": 16,
