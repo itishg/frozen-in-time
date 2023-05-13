@@ -27,7 +27,7 @@ class OverwatchClips(TextVideoDataset):
         self.metadata = pd.DataFrame({'captions': self.metadata})
 
     def _get_video_path(self, sample):
-        return os.path.join(self.data_dir, 'overwatch_clips', 'final', sample.name + '.mp4'), sample.name + '.mp4'
+        return os.path.join(self.data_dir, 'overwatch_clips', 'final', sample.name), sample.name
 
     def _get_caption(self, sample):
         caption_sample = self.text_params.get('caption_sample', "rand")
