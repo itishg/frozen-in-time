@@ -6,7 +6,7 @@ from data_loader.WebVid_dataset import WebVid
 from data_loader.VideoDirectory_dataset import VideoDirectory, CMDShotFeats
 from data_loader.ImageDirectory_dataset import ImageDirectory
 from data_loader.OverwatchClips_dataset import OverwatchClips
-from data_loader.OverwatchTest_dataset import OverwatchTest
+from data_loader.OverwatchTest import OverwatchTest
 from data_loader.transforms import init_transform_dict
 
 
