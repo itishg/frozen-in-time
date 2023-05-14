@@ -1,5 +1,4 @@
 import os
-import random
 
 import pandas as pd
 
@@ -7,11 +6,11 @@ from base.base_dataset import TextVideoDataset
 
 class OverwatchClips(TextVideoDataset):
     def _load_metadata(self):
-        csv_fp = os.path.join(self.metadata_dir, 'labels.csv')
+        csv_fp = os.path.join(self.metadata_dir, 'labels_split.csv')  # Load labels_split.csv
         df = pd.read_csv(csv_fp)
 
-        train_df = df.sample(frac=0.8, random_state=1)  # Use 80% of the data for training
-        test_df = df.drop(train_df.index)  # Use the rest for testing
+        train_df = df[df['split'] == 'train']  # Get rows where 'split' is 'train'
+        test_df = df[df['split'] == 'test']  # Get rows where 'split' is 'test'
 
         if self.split == 'train':
             df = train_df
