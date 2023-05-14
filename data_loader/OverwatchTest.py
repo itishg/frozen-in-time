@@ -26,7 +26,7 @@ if __name__ == "__main__":
         {"input": "text"},
         {"input_res": 224, "num_frames": 4},
         data_dir='/content/drive/MyDrive/overwatch_clips/final/',
-        metadata_dir='/content/drive/MyDrive/overwatch_clips/final/'',
+        metadata_dir='/content/drive/MyDrive/overwatch_clips/final/',
         split='test',
         tsfms=tsfms['test']
     )
