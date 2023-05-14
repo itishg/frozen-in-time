@@ -6,6 +6,7 @@ from data_loader.WebVid_dataset import WebVid
 from data_loader.VideoDirectory_dataset import VideoDirectory, CMDShotFeats
 from data_loader.ImageDirectory_dataset import ImageDirectory
 from data_loader.OverwatchClips_dataset import OverwatchClips
+from data_loader.OverwatchTest_dataset import OverwatchTest
 from data_loader.transforms import init_transform_dict
 
 
@@ -51,8 +52,10 @@ def dataset_loader(dataset_name,
         # dataset = ActivityNet(**kwargs)
     elif dataset_name == "ImageDirectory":
         dataset = ImageDirectory(**kwargs)
-    elif dataset_name == "OverwatchClips":  # New dataset class
+    elif dataset_name == "OverwatchClips":
         dataset = OverwatchClips(**kwargs)
+    elif dataset_name == "OverwatchTest":
+        dataset = OverwatchTest(**kwargs)
     else:
         raise NotImplementedError(f"Dataset: {dataset_name} not found.")
 
