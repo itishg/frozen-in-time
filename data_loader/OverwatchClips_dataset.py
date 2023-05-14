@@ -29,9 +29,4 @@ class OverwatchClips(TextVideoDataset):
         return os.path.join(self.data_dir, sample.name), sample.name
 
     def _get_caption(self, sample):
-        caption_sample = self.text_params.get('caption_sample', "rand")
-        if self.split == 'train' and caption_sample == "rand":
-            caption = random.choice(sample['captions'])
-        else:
-            caption = sample['captions'][0]
-        return caption
+    return sample['captions'][0]
