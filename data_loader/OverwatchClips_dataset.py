@@ -29,4 +29,4 @@ class OverwatchClips(TextVideoDataset):
         return os.path.join(self.data_dir, sample.name), sample.name
 
     def _get_caption(self, sample):
-    return sample['captions'][0]
+        return sample['captions'][0]
