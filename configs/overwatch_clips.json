@@ -45,7 +45,7 @@
     "optimizer": {
         "type": "AdamW",
         "args":{
-            "lr": 3e-5
+            "lr": 1e-6
         }
     },
     "loss": {
@@ -58,7 +58,7 @@
         "v2t_metrics"
      ],
     "trainer": {
-        "epochs": 1,
+        "epochs": 10,
         "max_samples_per_epoch": 9000,
         "save_dir": "/content/drive/MyDrive/Project Overwatch/exps/",
         "save_period": 5,
