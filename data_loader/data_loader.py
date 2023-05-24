@@ -57,7 +57,7 @@ def dataset_loader(dataset_name,
         dataset = OverwatchClips(**kwargs)
     elif dataset_name == "OverwatchTest":
         dataset = OverwatchTest(**kwargs)
-    elif dataset_name == "ucla":
+    elif dataset_name == "Ucla":
         dataset = Ucla(**kwargs)
     else:
         raise NotImplementedError(f"Dataset: {dataset_name} not found.")
