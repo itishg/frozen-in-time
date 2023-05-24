@@ -19,7 +19,7 @@ class Ucla(TextImageDataset):
 
         self.split_sizes = {'train': len(train_df), 'test': len(test_df)}
 
-        self.metadata = df.groupby(['filname'])['caption'].apply(list)
+        self.metadata = df.groupby(['fname'])['caption'].apply(list)
         if self.subsample < 1:
             self.metadata = self.metadata.sample(frac=self.subsample)
 
