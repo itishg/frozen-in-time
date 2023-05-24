@@ -4,7 +4,7 @@ import pandas as pd
 
 from base.base_dataset import TextImageDataset
 
-class ucla(TextImageDataset):
+class Ucla(TextImageDataset):
     def _load_metadata(self):
         csv_fp = os.path.join(self.metadata_dir, 'labels_split.csv')  # Load labels_split.csv
         df = pd.read_csv(csv_fp)
