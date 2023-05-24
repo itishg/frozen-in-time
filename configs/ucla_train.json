@@ -57,7 +57,7 @@
     "trainer": {
         "epochs": 5,
         "max_samples_per_epoch": 9000,
-        "save_dir": "/work/maxbain/Libs/frozen-in-time",
+        "save_dir": "/content/drive/MyDrive/Project Overwatch/exps/ucla/",
         "save_period": 5,
         "verbosity": 2,
         "monitor": "min val_loss_0",
