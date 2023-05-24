@@ -7,7 +7,7 @@ from base.base_dataset import TextImageDataset
 class Ucla(TextImageDataset):
     def _load_metadata(self):
         csv_fp = os.path.join(self.metadata_dir, 'labels_split.csv')  # Load labels_split.csv
-        df = pd.read_csv(csv_fp)
+        df = pd.read_csv(csv_fp, error_bad_lines=False)
 
         train_df = df[df['split'] == 'train']  # Get rows where 'split' is 'train'
         test_df = df[df['split'] == 'test']  # Get rows where 'split' is 'test'
