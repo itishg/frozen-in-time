@@ -7,7 +7,7 @@ from data_loader.VideoDirectory_dataset import VideoDirectory, CMDShotFeats
 from data_loader.ImageDirectory_dataset import ImageDirectory
 from data_loader.OverwatchClips_dataset import OverwatchClips
 from data_loader.OverwatchTest import OverwatchTest
-from data_loader.ucla_dataset import ucla
+from data_loader.Ucla_dataset import ucla
 from data_loader.transforms import init_transform_dict
 
 
@@ -58,7 +58,7 @@ def dataset_loader(dataset_name,
     elif dataset_name == "OverwatchTest":
         dataset = OverwatchTest(**kwargs)
     elif dataset_name == "ucla":
-        dataset = ucla(**kwargs)
+        dataset = Ucla(**kwargs)
     else:
         raise NotImplementedError(f"Dataset: {dataset_name} not found.")
 
