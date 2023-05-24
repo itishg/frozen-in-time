@@ -7,7 +7,7 @@ from data_loader.VideoDirectory_dataset import VideoDirectory, CMDShotFeats
 from data_loader.ImageDirectory_dataset import ImageDirectory
 from data_loader.OverwatchClips_dataset import OverwatchClips
 from data_loader.OverwatchTest import OverwatchTest
-from data_loader.Ucla_dataset import ucla
+from data_loader.Ucla_dataset import Ucla
 from data_loader.transforms import init_transform_dict
 
 
