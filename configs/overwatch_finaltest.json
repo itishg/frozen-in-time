@@ -1,5 +1,5 @@
 {
-    "name": "OverwatchClips_test",
+    "name": "OverwatchClips_testfinal",
     "n_gpu": 1,
     "arch": {
         "type": "FrozenInTime",
@@ -23,8 +23,8 @@
     "data_loader": {
         "type": "TextVideoDataLoader",
         "args":{
-            "dataset_name": "OverwatchClips",
-            "data_dir": "/content/drive/MyDrive/final",
+            "dataset_name": "OverwatchTestFinal",
+            "data_dir": "/content/drive/MyDrive/",
             "shuffle": false,
             "num_workers": 16,
             "batch_size": 16,
